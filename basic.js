@@ -38,7 +38,7 @@
 
 // find largest number in the array
 function largetNumber(arr) {
-    let large = -Infinity
+    let large = -Infinity // or use arr[0]
     for (let i = 0; i < arr.length; i++) {
         if (arr[i] > large) {
             large = arr[i]
