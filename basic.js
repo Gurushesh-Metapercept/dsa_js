@@ -34,3 +34,21 @@
 
 // let hh = helo(arr);
 // console.log(hh);
+
+
+
+function largetNumber(arr) {
+    let large = 0
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] > large) {
+            large = arr[i]
+        }
+    }
+
+    return large
+}
+
+let arr = [5, 2, 3, 4,17, 9, 6, 3]
+
+let hh = largetNumber(arr)
+console.log(hh)
