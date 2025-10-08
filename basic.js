@@ -36,7 +36,7 @@
 // console.log(hh);
 
 
-
+// find largest number in the array
 function largetNumber(arr) {
     let large = 0
     for (let i = 0; i < arr.length; i++) {
