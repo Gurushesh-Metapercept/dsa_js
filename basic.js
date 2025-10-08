@@ -37,18 +37,41 @@
 
 
 // find largest number in the array
-function largetNumber(arr) {
-    let large = -Infinity // or use arr[0]
+// function largetNumber(arr) {
+//     let large = -Infinity // or use arr[0]
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] > large) {
+//             large = arr[i]
+//         }
+//     }
+
+//     return large
+// }
+
+// let arr = [-5,-8,-2]
+
+// let hh = largetNumber(arr)
+// console.log(hh)
+
+
+// Second largest number
+function secondLargetNum(arr) {
+    if(arr.length < 2) return null
+    let first = -Infinity
+    let second = -Infinity
     for (let i = 0; i < arr.length; i++) {
-        if (arr[i] > large) {
-            large = arr[i]
+        if (arr[i] > first) {
+            second = first
+            first = arr[i]
+        } else if (arr[i] > second && arr[i] < first) {
+            second = arr[i]
         }
     }
 
-    return large
+    return second
 }
 
-let arr = [-5,-8,-2]
+let arr = [5,6,3,1,2,8,9,15,18,18]
 
-let hh = largetNumber(arr)
+let hh = secondLargetNum(arr)
 console.log(hh)
