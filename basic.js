@@ -55,23 +55,40 @@
 
 
 // Second largest number
-function secondLargetNum(arr) {
-    if(arr.length < 2) return null
-    let first = -Infinity
-    let second = -Infinity
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i] > first) {
-            second = first
-            first = arr[i]
-        } else if (arr[i] > second && arr[i] != first) {
-            second = arr[i]
-        }
-    }
+// function secondLargetNum(arr) {
+//     if(arr.length < 2) return null
+//     let first = -Infinity
+//     let second = -Infinity
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] > first) {
+//             second = first
+//             first = arr[i]
+//         } else if (arr[i] > second && arr[i] != first) {
+//             second = arr[i]
+//         }
+//     }
 
-    return second
-}
+//     return second
+// }
 
-let arr = [5,6,3,1,2,8,9,15,18,18]
 
-let hh = secondLargetNum(arr)
-console.log(hh)
+// Count digit
+
+// let counter = 0;
+
+// function countDigit(n) {
+//     while (n > 0) {
+//         n = Math.floor(n / 10)
+//         counter++
+//     }
+
+//     return counter
+// }
+
+// let n = 4866
+// console.log(countDigit(n))
+
+// let arr = [5,6,3,1,2,8,9,15,18,18]
+
+// let hh = secondLargetNum(arr)
+// console.log(hh)
