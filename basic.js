@@ -77,7 +77,9 @@
 // let counter = 0;
 
 // function countDigit(n) {
-//     if(n == 0) return 1
+//     if (n == 0) return 1
+
+//     n = Math.abs(n) // convert negative num to positive
 //     while (n > 0) {
 //         n = Math.floor(n / 10)
 //         counter++
@@ -86,10 +88,5 @@
 //     return counter
 // }
 
-// let n = 4866
+// let n = -565
 // console.log(countDigit(n))
-
-// let arr = [5,6,3,1,2,8,9,15,18,18]
-
-// let hh = secondLargetNum(arr)
-// console.log(hh)
