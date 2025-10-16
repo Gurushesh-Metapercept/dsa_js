@@ -93,25 +93,51 @@
 
 
 
-function PalindromNum(n) {
-    if (n < 0) return false
+// Palindrom Number
+// function PalindromNum(n) {
+//     if (n < 0) return false
 
-    let xCopy = n
-    let rev = 0
+//     let xCopy = n
+//     let rev = 0
 
-    while (n > 0) {
-        let rem = n % 10
-        rev = (10 * rev) + rem
-        n = Math.floor(n / 10)
-    }
+//     while (n > 0) {
+//         let rem = n % 10
+//         rev = (10 * rev) + rem
+//         n = Math.floor(n / 10)
+//     }
 
-    if (xCopy == rev) {
-        return true
-    } else {
-        return false
-    }
+//     if (xCopy == rev) {
+//         return true
+//     } else {
+//         return false
+//     }
 
-}
+// }
 
-let n = 1215
-console.log(PalindromNum(n))
+// let n = 1215
+// console.log(PalindromNum(n))
+
+
+// Reverse Digit (negative number also)
+// function revDigit(n) {
+
+//     let copy = n
+//     let rev = 0
+
+//     n = Math.abs(n)  // convert negative no. to positive
+//     while (n > 0) {
+//         let last = n % 10;
+//         rev = (10 * rev) + last
+//         n = Math.floor(n / 10);
+//     }
+
+//     if (copy < 0) {
+//         return -rev  // if input is negative then return reverse num negative 
+//     } else {
+//         return rev
+//     }
+
+// }
+
+// let n = -5564
+// console.log(revDigit(n))
