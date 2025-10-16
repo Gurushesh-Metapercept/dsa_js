@@ -135,7 +135,9 @@
 //         return -rev  // if input is negative then return reverse num negative 
 //     } else {
 //         return rev
-//     }
+//     } 
+
+// return copy < 0 ? -rev : rev  // can you ternary operator too
 
 // }
 
